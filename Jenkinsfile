@@ -11,4 +11,9 @@ pipeline {
         }
      }
     }
+    post {
+        always {
+         sh 'echo close cleanup'
+        }
+    }
     }
