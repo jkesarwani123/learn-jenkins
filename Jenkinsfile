@@ -1,13 +1,10 @@
 pipeline {
-agent any
-stages {
-stage ('One') {
-
-steps {
- sh 'echo Hello World'
-
- }
- }
- }
-
+    agent any
+    stages {
+        stage ('One') {
+            steps {
+            sh 'echo Hello World'
+            }
+        }
+    }
 }
