@@ -1,5 +1,5 @@
 pipeline {
-agennt any
+agent any
 stages {
 stage ('One') {
 
