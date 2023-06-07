@@ -4,10 +4,14 @@ pipeline {
      label 'workspace'
      }
     }
+    environment {
+    SAMPLE ="JK"
+    }
     stages {
      stage('One') {
         steps {
             sh 'echo Hello World'
+            sh 'echo ${SAMPLE}''
         }
      }
     }
