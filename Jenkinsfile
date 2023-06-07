@@ -18,7 +18,6 @@ pipeline {
          input {
                message "Should we continue?"
                ok "Yes"
-
                 }
         steps {
             sh 'echo Hello World'
