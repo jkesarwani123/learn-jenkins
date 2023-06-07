@@ -1,7 +1,8 @@
 pipeline {
-    agent any
-    stages {
-        stage ('One') {
+    agent {
+    {
+                      label 'my-defined-label'
+                      customWorkspace '/some/other/path'
             steps {
             sh 'echo Hello World'
             }
