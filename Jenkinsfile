@@ -4,6 +4,12 @@ pipeline {
      label 'workspace'
      }
     }
+    options {
+        ansiColor('xterm')
+    }
+    parameters {
+        string(name: 'PERSON', defaultValue: 'staging', description: '')
+    }
     environment {
     SAMPLE ="JK"
     }
